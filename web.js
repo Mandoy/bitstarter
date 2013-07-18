@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 var content = fs.readFileSync('index.html');
 
-app.use(express.static(__dirname + '/bootstratp'));
+app.use(express.static(__dirname + '/bootstrap'));
 
 app.get('/', function(request,response) {
   response.send(content.toString("utf-8"));
